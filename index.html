@@ -51,19 +51,70 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
               <h3>Contact me</h3>
-              <p class="text"> Curabitur blandit tempus porttitor. Vollis ac inceptos
+              <p class="text-1"> Curabitur blandit tempus porttitor. Vollis ac inceptos
                 mollisestor commodo luctus. Curabitur blandit tempus porttitor.
                 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                <div class="name">Your name</div>
-                <div class="email">Your email...</div>
-                <div class="text"><p>Curabitur blandit tempus porttitor. Vollis ac inceptos
+                <div class="line">
+                  <div class="name">Your name</div>
+                  <div class="email">Your email...</div>
+                </div>
+                <div class="text"><p class="text-1">Curabitur blandit tempus porttitor. Vollis ac inceptos
                   mollisestor commodo luctus. Curabitur blandit tempus porttitor.
                   Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p></div>
-                  <button class="send">Send</button>
+                  <button class="send">Send message</button>
               </div>
             </div>
         </div>
+        <h4>Portfolio</h4>
+        <p class="item">
+          Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+          commodo luctus. Curabitur blandit <br />
+          tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum
+          at eros.
+        </p>
+        <div class="wrapper">
+          <div class="block">
+            <img src="./assets/Rectangle 7.png" class="zoom" alt="" />
+          </div>
+          <div class="block-1">
+            <img src="./assets/Rectangle 8.png" class="zoom" alt="" />
+          </div>
+          <div class="block-2">
+            <img src="./assets/Rectangle 9.png" class="zoom" alt="" />
+          </div>
+          <div class="block-3">
+            <img src="./assets/Rectangle 10.png" class="zoom" alt="" />
+          </div>
+          <div class="block-4">
+            <img src="./assets/Rectangle 11.png" class="zoom" alt="" />
+          </div>
+          <div class="block-5">
+            <img src="./assets/Rectangle 12.png" class="zoom" alt="" />
+          </div>
+          <div class="block-6">
+            <img src="./assets/Rectangle 13.png" class="zoom" alt="" />
+          </div>
+          <div class="block-7">
+            <img src="./assets/Rectangle 14.png" class="zoom" alt="" />
+          </div>
+        </div>
       </section>
     </main>
+    <script>
+      const modal = document.getElementById("myModal");
+      let btn = document.getElementById("myBtn");
+      let span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function(){
+        modal.style.display = "none";
+      }
+      window.onclick = function(event){
+        if (event.target == modal){
+          modal.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
